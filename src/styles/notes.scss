@@ -1,0 +1,92 @@
+.todo__notes__wrapper {
+  width: 100%;
+  padding: 2.6rem 1.2rem 2.1rem;
+}
+
+.todo__note__wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 2.2rem .9rem 1.8rem;
+  border-bottom: 1px solid var(--gray-blue);
+}
+
+.todo__note__complete {
+  position: relative;
+  display: flex;
+  width: 5.9rem;
+  height: 5.9rem;
+  border-radius: 50%;
+  border: .1rem solid #DADADA;
+  margin-right: 2.9rem;
+  background-color: transparent;
+  flex-shrink: 0;
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: var(--blue);
+  }
+
+  &::after {
+    width: 1.3rem;
+    height: .6rem;
+    transform: rotate(45.42deg);
+    top: 3rem;
+    left: 1.3rem;
+  }
+
+  &::before {
+    width: 3.24rem;
+    height: .3rem;
+    transform: rotate(-42.06deg);
+    top: 2.6rem;
+    left: 1.7rem;
+  }
+}
+
+.todo__note__content {
+  width: 100%;
+  overflow: hidden;
+}
+
+.todo__note__content__header {
+  font-size: 2rem;
+  color: var(--blue-dark);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.todo__note__content__text {
+  width: 13.6rem;
+  margin-top: .9rem;
+  font-size: 1.6rem;
+  color: var(--blue-dark-trans);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.todo__notes__add-button {
+  position: absolute;
+  right: 2.5rem;
+  bottom: 3.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  box-shadow: 0 .4rem .4rem var(--blue-dark-trans);
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 4.8rem;
+  transition: all .34s ease-in-out;
+
+  &:hover {
+    background-color: var(--white);
+    color: var(--blue);
+  }
+}
