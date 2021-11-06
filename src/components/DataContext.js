@@ -5,7 +5,7 @@ import { useCollection } from 'react-firebase-hooks/firestore';
 import { nanoid } from 'nanoid'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBFxMxOrKMmbVQ0gu-aOXja1LebYPW1Qo0",
+  apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
   authDomain: "todo-d7596.firebaseapp.com",
   projectId: "todo-d7596",
   storageBucket: "todo-d7596.appspot.com",
